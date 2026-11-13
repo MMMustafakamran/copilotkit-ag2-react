@@ -1,0 +1,960 @@
+{
+ "framework": "AG2",
+ "ui": "react",
+ "repo": "heap-gtw1",
+ "docBase": "https://docs.copilotkit.ai/ag2/",
+ "versions": {
+  "@copilotkit/react-core": "1.87.1",
+  "@copilotkit/runtime": "1.87.1",
+  "@ag-ui/client": "1.0.4",
+  "next": "16.4.6",
+  "react": "19.3.0",
+  "ag2": "1.3.1",
+  "ag-ui-protocol": "1.0.0",
+  "fastapi": "0.162.5",
+  "uvicorn": "0.54.0"
+ },
+ "testedContext": {
+  "os": "Microsoft Windows 11 Pro",
+  "packageManager": "npm 12 (Node 26.7.0)"
+ },
+ "report": {
+  "style": "team",
+  "h1": "AG2",
+  "title": "AG2 React",
+  "clipsToUpload": false,
+  "columns": [
+   "Page/Section",
+   "AG2"
+  ],
+  "resultColumn": 1,
+  "guidesHeading": "React Guides",
+  "quickstartHeading": "Quickstarts",
+  "quickstartHeader": [
+   "Page/Section",
+   "AG2"
+  ]
+ },
+ "sections": [
+  {
+   "label": "Basics",
+   "cells": [
+    "Section"
+   ]
+  },
+  {
+   "label": "Chat",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Custom Look and Feel",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Threads",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Generative UI",
+   "cells": [
+    "Section"
+   ]
+  },
+  {
+   "label": "Controlled",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Components and surfaces",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "A2UI",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Declarative",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Open-ended",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Interactivity",
+   "cells": [
+    "Section"
+   ]
+  },
+  {
+   "label": "Shared state",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Human-in-the-loop",
+   "cells": [
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Agent capabilities",
+   "cells": [
+    "Section"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "quickstart",
+   "label": "JS (React)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "quickstart",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: the sample hardcodes ports 8000/3000 with no override (moved for the harness)."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Quickstart - JS",
+     "clip": "AG2-react-01-Quickstart",
+     "loom": null
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-components",
+   "label": "Prebuilt Components",
+   "kind": "guide",
+   "group": "Chat",
+   "child": false,
+   "docPath": "prebuilt-components",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Prebuilt Components - JS",
+     "clip": "AG2-react-02-PrebuiltComponents",
+     "loom": "https://www.loom.com/share/50f966b9e5394745a8b4b5900ead8a87",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "copilot-chat",
+   "label": "- CopilotChat",
+   "kind": "guide",
+   "group": "Chat",
+   "child": true,
+   "docPath": "prebuilt-components/chat",
+   "reachable": "in-content",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: useAgenticChatSuggestions is never defined on the page."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "CopilotChat - JS",
+     "clip": "AG2-react-03-CopilotChat",
+     "loom": "https://www.loom.com/share/71d50866a7da45fbb65a19c51effc21f",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "slots",
+   "label": "Slots",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/slots",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Slots - JS",
+     "clip": "AG2-react-04-Slots",
+     "loom": "https://www.loom.com/share/d5e5355d385249bda7ef2112911c2be1",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "markdown-rendering",
+   "label": "- Markdown Rendering",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": true,
+   "docPath": "custom-look-and-feel/markdown",
+   "reachable": "in-content",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Markdown Rendering - JS",
+     "clip": "AG2-react-05-MarkdownRendering",
+     "loom": "https://www.loom.com/share/f7b11893baac49d79792aca3a77d2d7c",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "headless-ui",
+   "label": "Fully headless UI",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/headless-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: @copilotkit/shared has to be installed by hand, no install step for it."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Headless UI - JS",
+     "clip": "AG2-react-06-HeadlessUi",
+     "loom": "https://www.loom.com/share/833280da28c14005923d3fa8da25eb45",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "programmatic-control",
+   "label": "Programmatic control",
+   "kind": "guide",
+   "group": "Chat",
+   "child": false,
+   "docPath": "programmatic-control",
+   "reachable": "sidebar",
+   "status": "⚠️",
+   "findings": [
+    2
+   ],
+   "notes": [
+    "Issue: Hydration failure error on load; the run itself works."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-07-ProgrammaticControl",
+     "loom": "https://www.loom.com/share/a788086ed725487dae33f3de9012241c",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "threads-drawer",
+   "label": "Threads Drawer",
+   "kind": "guide",
+   "group": "Threads",
+   "child": false,
+   "docPath": "prebuilt-components/copilot-threads-drawer",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Threads Drawer - JS",
+     "clip": "AG2-react-08-ThreadsDrawer",
+     "loom": "https://www.loom.com/share/b7bacaf428e6447585cc9a488137bce6",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "headless-threads",
+   "label": "Headless Threads",
+   "kind": "guide",
+   "group": "Threads",
+   "child": false,
+   "docPath": "headless-threads",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    3
+   ],
+   "notes": [
+    "Issue: the thread list stays empty: the sidebar lists threads for agent \"my-agent\" but the CopilotChat has no agentId, so it runs on the default agent; ThreadSidebar never calls onSelectThread, so rows can't open a thread."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-09-HeadlessThreads",
+     "loom": "https://www.loom.com/share/0561c6d4caec456db8e00cffbaaee5a1",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "frontend-tools",
+   "label": "Frontend Tools",
+   "kind": "guide",
+   "group": "Basics",
+   "child": false,
+   "docPath": "frontend-tools",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Frontend Tools - JS",
+     "clip": "AG2-react-10-FrontendTools",
+     "loom": "https://www.loom.com/share/80b4c1512a4149d7ba43a8d8d7251f8d",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "hitl",
+   "label": "HITL Overview",
+   "kind": "guide",
+   "group": "Human-in-the-loop",
+   "child": false,
+   "docPath": "human-in-the-loop/index",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: the Code tab agent imports helper modules the page never shows."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "HITL - JS",
+     "clip": "AG2-react-11-Hitl",
+     "loom": "https://www.loom.com/share/fb866c6bdb94411f840ddac9fc4765e4",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "use-interrupt",
+   "label": "Pausing the agent for input",
+   "kind": "guide",
+   "group": "Human-in-the-loop",
+   "child": false,
+   "docPath": "human-in-the-loop/useInterrupt",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "findings": [],
+   "notes": [
+    "Note: the page says \"Not available on this framework\"."
+   ],
+   "block": null,
+   "links": []
+  },
+  {
+   "id": "headless-hitl",
+   "label": "Headless Interrupts",
+   "kind": "guide",
+   "group": "Human-in-the-loop",
+   "child": false,
+   "docPath": "human-in-the-loop/headless",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "findings": [],
+   "notes": [
+    "Note: the page says \"Not available on this framework\"."
+   ],
+   "block": null,
+   "links": []
+  },
+  {
+   "id": "governed-actions",
+   "label": "Governed Actions",
+   "kind": "guide",
+   "group": "Human-in-the-loop",
+   "child": false,
+   "docPath": "human-in-the-loop/governed-actions",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: now working, the approval card appears."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Governed Actions - JS",
+     "clip": "AG2-react-12-GovernedActions",
+     "loom": "https://www.loom.com/share/53f7fe75636c4e62b98dd71442939a38",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-tool-based",
+   "label": "Components as Tools",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": false,
+   "docPath": "generative-ui/tool-based",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: BarChart and barChartPropsSchema are not shown and SYSTEM_PROMPT is used before it is defined."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Components as Tools - JS",
+     "clip": "AG2-react-13-GenUiToolBased",
+     "loom": "https://www.loom.com/share/995fe83943bf4890a85567dd2cec97fa",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-tool-rendering",
+   "label": "Tool Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": false,
+   "docPath": "generative-ui/tool-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Tool Rendering - JS",
+     "clip": "AG2-react-14-GenUiToolRendering",
+     "loom": "https://www.loom.com/share/78c755977cb34a45925e936d61b4b88b",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-state-rendering",
+   "label": "State Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": false,
+   "docPath": "generative-ui/state-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "State Rendering - JS",
+     "clip": "AG2-react-15-GenUiStateRendering",
+     "loom": "https://www.loom.com/share/d546510f771c4963bbb00deb8f802e82",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-components",
+   "label": "Components and surfaces",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components",
+   "reachable": "sidebar",
+   "status": "⚠️",
+   "findings": [
+    4
+   ],
+   "notes": [
+    "Issue: the step 2 runtime never answers, console says chat() needs a threadId."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-24-GenUiComponents",
+     "loom": "https://www.loom.com/share/0b7d7fb17a0b464c86d5187ca6bc2c03",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-surfaces",
+   "label": "Surfaces",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/surfaces",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    5
+   ],
+   "notes": [
+    "Issue: nothing renders in the featured row; the page never shows the catalog, ProductRow or the products."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-25-GenUiSurfaces",
+     "loom": "https://www.loom.com/share/dfb6b6d0562747bc9912c083ffcba066",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-catalogs",
+   "label": "Catalogs",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/catalogs",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Catalogs - JS",
+     "clip": "AG2-react-26-GenUiCatalogs",
+     "loom": "https://www.loom.com/share/cf3fc6b7bfba4e2c82ffdb7b1735766b",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-standard-catalog",
+   "label": "Standard catalog",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/standard-catalog",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: now working."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Standard catalog - JS",
+     "clip": "AG2-react-27-GenUiStandardCatalog",
+     "loom": "https://www.loom.com/share/418fea6c9d3141199e72ba078473ef77",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-state-actions",
+   "label": "State and actions",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/state-and-actions",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: now working; the Cart type and store, z and createGenerativeUI imports are not shown."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "State and actions - JS",
+     "clip": "AG2-react-28-GenUiStateActions",
+     "loom": "https://www.loom.com/share/ff1e6103a1654b459731aded3c0e4263",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-theming",
+   "label": "Theming",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/theming",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Theming - JS",
+     "clip": "AG2-react-29-GenUiTheming",
+     "loom": "https://www.loom.com/share/0430c70b75ea43ca97b03c2135a824a6",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-transports",
+   "label": "Transports",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/transports",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Transports - JS",
+     "clip": "AG2-react-30-GenUiTransports",
+     "loom": "https://www.loom.com/share/06773aa1b8c0455faf043ded08b8caad",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-markdown-mode",
+   "label": "Markdown mode",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/markdown-mode",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Markdown mode - JS",
+     "clip": "AG2-react-31-GenUiMarkdownMode",
+     "loom": "https://www.loom.com/share/ee63ca90b49e48c5a0937baf22953253",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-from-a2ui",
+   "label": "Adopt from A2UI",
+   "kind": "guide",
+   "group": "Components and surfaces",
+   "child": false,
+   "docPath": "generative-ui/components/from-a2ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: Airport and Arrow renderers are not shown on the page."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Adopt from A2UI - JS",
+     "clip": "AG2-react-32-GenUiFromA2ui",
+     "loom": "https://www.loom.com/share/dbba3ae11283487298e51fb1661d07a5",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "a2ui",
+   "label": "A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "A2UI - JS",
+     "clip": "AG2-react-16-A2UI",
+     "loom": "https://www.loom.com/share/4325570ed2a4424ba421176c5dff6d8b",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "a2ui-dynamic-schema",
+   "label": "Dynamic Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/dynamic-schema",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    6
+   ],
+   "notes": [
+    "Issue: page imports ./chat, ../_components/badge and button, and ._loop_cap, which are never shown; with them filled in, the dashboard never renders (A2UI render error: Cannot read properties of undefined (reading 'map')). Also mentions LangGraph on the AG2 page."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-17-A2UIDynamicSchema",
+     "loom": "https://www.loom.com/share/f5093d2cc69644bf95228d200e466f9a",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "a2ui-fixed-schema",
+   "label": "Fixed Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/fixed-schema",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    7
+   ],
+   "notes": [
+    "Issue: flight card shows up but airports, airline and price are empty; frontend files and the AG2 backend steps are missing from the page."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-18-A2UIFixedSchema",
+     "loom": "https://www.loom.com/share/fa2e56ab4a4547afbbe7ebf6b17884b2",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-json-render",
+   "label": "JSON Render",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/json-render",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "findings": [],
+   "notes": [
+    "Note: the page says \"Not available for AG2 yet\"."
+   ],
+   "block": null,
+   "links": []
+  },
+  {
+   "id": "gen-ui-hashbrown",
+   "label": "Hashbrown",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/hashbrown",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "findings": [],
+   "notes": [
+    "Note: the page says \"Not available for AG2 yet\"."
+   ],
+   "block": null,
+   "links": []
+  },
+  {
+   "id": "gen-ui-mcp-apps",
+   "label": "MCP Apps",
+   "kind": "guide",
+   "group": "Open-ended",
+   "child": false,
+   "docPath": "generative-ui/mcp-apps",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: the page uses a TypeScript BuiltInAgent (no AG2) and leaves the MCP server to the reader."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "MCP Apps - JS",
+     "clip": "AG2-react-19-GenUiMcpApps",
+     "loom": null
+    }
+   ]
+  },
+  {
+   "id": "gen-ui-open-gen-ui",
+   "label": "Open Generative UI",
+   "kind": "guide",
+   "group": "Open-ended",
+   "child": false,
+   "docPath": "generative-ui/open-generative-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: ./chat, ./design-skill and ._loop_cap are not shown."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Open Generative UI - JS",
+     "clip": "AG2-react-20-GenUiOpenGenUi",
+     "loom": "https://www.loom.com/share/b88ce75ec8ac4d7b808808a052fc8287",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "shared-state-read",
+   "label": "Reading agent state",
+   "kind": "guide",
+   "group": "Shared state",
+   "child": false,
+   "docPath": "shared-state/read",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [],
+   "block": null,
+   "links": [
+    {
+     "text": "Reading Agent State - JS",
+     "clip": "AG2-react-21-SharedStateRead",
+     "loom": "https://www.loom.com/share/7f7aab0475bc477fac9a943ff060b0ae",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "shared-state-write",
+   "label": "Writing agent state",
+   "kind": "guide",
+   "group": "Shared state",
+   "child": false,
+   "docPath": "shared-state/write",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    8
+   ],
+   "notes": [
+    "Issue: after toggling the language to spanish the agent still answers in English, and the UI can flip back to english; the UI-written state never reaches the agent."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Issue",
+     "clip": "AG2-react-22-SharedStateWrite",
+     "loom": "https://www.loom.com/share/c8feadc3a0d34b21aff6692854fef5a7",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "webmcp",
+   "label": "WebMCP",
+   "kind": "guide",
+   "group": "Interactivity",
+   "child": false,
+   "docPath": "webmcp",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: searchOrders() is never defined on the page."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "WebMCP - JS",
+     "clip": "AG2-react-33-WebMcp",
+     "loom": null
+    }
+   ]
+  },
+  {
+   "id": "auth",
+   "label": "Authentication",
+   "kind": "guide",
+   "group": "Agent capabilities",
+   "child": false,
+   "docPath": "auth",
+   "reachable": "sidebar",
+   "status": "❌",
+   "findings": [
+    1
+   ],
+   "notes": [],
+   "block": {
+    "area": "Authentication",
+    "problem": "the authorization passed in properties is never forwarded to the AG2 /chat endpoint as a header, so every run gets 401 Unauthorized and the chat shows no reply"
+   },
+   "links": [
+    {
+     "text": "Not Working",
+     "clip": "AG2-react-34-Auth",
+     "loom": "https://www.loom.com/share/f6d2fbc045f8450b835a3c40da225ae1",
+     "filmed": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "subagents",
+   "label": "Sub-agents",
+   "kind": "guide",
+   "group": "Agent capabilities",
+   "child": false,
+   "docPath": "multi-agent/subagents",
+   "reachable": "sidebar",
+   "status": "✅",
+   "findings": [],
+   "notes": [
+    "Note: now working, the panel shows researcher and writer done."
+   ],
+   "block": null,
+   "links": [
+    {
+     "text": "Sub Agents - JS",
+     "clip": "AG2-react-23-Subagents",
+     "loom": "https://www.loom.com/share/0bf26d343ad2484aad0751fe0104a5ed",
+     "filmed": "2026-11-13"
+    }
+   ]
+  }
+ ]
+}
