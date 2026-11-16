@@ -8,6 +8,7 @@ import { glideClick, glideTo } from './glide-click';
 import { runStandardAction } from '../core/actions';
 import { type DocEvidence, showFinding } from './doc-evidence';
 import { checkpoint, mark, probeText } from '../core/timeline';
+import { registerDocEvidence } from '../core/doc-evidence';
 import { SELECTORS } from '../config/selectors.config';
 
 /**
@@ -25,6 +26,9 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = { ...EVIDENCE_A, 
 
 /** Level-2 pages (already reported by the team): clip ends after the demo. */
 export const KNOWN_ISSUE = new Set<string>([...KNOWN_A, ...KNOWN_B, ...KNOWN_C]);
+
+/** Doc step: highlight each page's faulty doc text before the IDE (level-2 pages get none). */
+registerDocEvidence(FINDING_EVIDENCE, { skip: KNOWN_ISSUE });
 
 export async function writeFinding(page: Page, id: string, config?: PageRecordConfig): Promise<void> {
   if (!FINDING_NOTES[id] || !config) return;
@@ -357,6 +361,14 @@ const promptHead = (config: PageRecordConfig) => config.prompt.slice(0, 24);
 export const runThreadsDrawerAction: PageActionHandler = async (page, config, root, ctx) => {
   await page.locator('copilotkit-threads-drawer').first().waitFor({ state: 'attached', timeout: 30000 }).catch(() => {});
   await sleep(3000); // the drawer loads its list
+  // Start on a fresh thread: the backend keeps threads per anonymous user, so the drawer can resume
+  // the last page's thread (Governed Actions left an unanswered approval → 400 on the next run,
+  // review 2026-11-16). A reader clicking "New Conversation" first is ordinary use, not a fix.
+  const fresh = page.getByText('New Conversation', { exact: true }).first();
+  if (await fresh.isVisible().catch(() => false)) {
+    await glideClick(page, fresh);
+    await sleep(1500);
+  }
   const rowsBefore = await page.locator(DRAWER_ROW).count();
   await runStandardAction(page, config, root, ctx);
   const mine = page.locator(DRAWER_ROW).filter({ hasText: promptHead(config) });
@@ -657,12 +669,16 @@ export const runSurfaceFirstWithFinding: PageActionHandler = async (page, config
     const msgCount = await sendPrompt(page, config.prompt, { timeoutMs: 15000 });
     const surface = page.locator('[data-generative-ui-surface], [data-generative-ui-chat-surface], [data-generative-ui-root], .a2ui-surface');
     const errorCard = page.getByText('Unable to display', { exact: false }).first();
-    const deadline = Date.now() + 120_000;
+    const deadline = Date.now() + 60_000; // was 120 s: on a page that never renders it only froze the clip (review 2026-11-16)
     while (Date.now() < deadline) {
       if ((await surface.count()) > 0 || (await errorCard.isVisible().catch(() => false))) break;
       await sleep(1000);
     }
-    await settle(page, msgCount, ctx);
+    // A card-only reply never produces assistant text: settle() would sit out its whole text wait on
+    // a card that is already on screen (frozen tails, review 2026-11-16 round 2). Card or error card
+    // seen: give it a few seconds to fill in. Nothing seen: settle as before (text reply / silence).
+    if ((await surface.count()) > 0 || (await errorCard.isVisible().catch(() => false))) await sleep(6000);
+    else await settle(page, msgCount, ctx);
     await sleep(2500);
     const rendered = (await surface.count()) > 0;
     const broken = await errorCard.isVisible().catch(() => false);
